@@ -35,7 +35,7 @@ class Program
                     break;
                 }
             }
-            Console.Write("Would you like to play again? (yes/no)"); string user_response = Console.ReadLine().ToLower();
+            Console.Write("Would you like to play again? (yes/no) "); string user_response = Console.ReadLine().ToLower();
             if (user_response == "no")
             {
                 Console.WriteLine("Exiting...");
@@ -49,6 +49,8 @@ class Program
             else
             {
                 Console.WriteLine("Invalid Input!");
+                Console.WriteLine("Exiting...");
+                return;
             }
         }
     }
