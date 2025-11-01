@@ -1,6 +1,5 @@
 using System;
 using System.Runtime.Versioning;
-namespace game;
 
 class Program
 {
