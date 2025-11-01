@@ -1,0 +1,5 @@
+What is version control and why is it important?
+
+Version control is a system that is used to track changes made to a program or project. It allows a previous version of the project/program to be restored when unintended changes are made. For example the command 'git restore' is used to undo local changes without making any changes to the commit history. Git however, is only a system that tracks changes made to those repositories.
+
+GitHub on the other hand improves upon git's services by providing a web-based platform for hosting repositories remotely. This allows developers to collaborate more easily.
