@@ -1,41 +1,55 @@
 using System;
+using System.Security.Cryptography;
 
 class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         Console.WriteLine("Hello World! This is the Exercise3 Project.");
-        int digit_guess, number_of_tries=0;
-        string guess;
-        Random randomGenerator = new Random();
-        int magic_number = randomGenerator.Next(1, 100);
-
-        Console.Write("What is the magic number? ");
-        do
+        Random magic_number = new Random();
+        while (true)
         {
-            Console.Write("What is your guess? "); guess = Console.ReadLine();
-            digit_guess = int.Parse(guess);
-            number_of_tries += 1;
-            Console.WriteLine($"Number of attempts {number_of_tries}");
+            int _magic_number = magic_number.Next(1, 100);
+            int number_of_tries = 0;
+            while (true)
             {
-                if (digit_guess < magic_number)
+                number_of_tries += 1;
+                Console.WriteLine($"Number of Tries: {number_of_tries}.");
+                Console.WriteLine("Enter Guess: "); string user_guess = Console.ReadLine();
+                int _user_guess = int.Parse(user_guess);
+
+                if (_user_guess < _magic_number)
                 {
                     Console.WriteLine("Higher");
-                    continue;
                 }
 
-                else if (digit_guess > magic_number)
+                else if (_user_guess > _magic_number)
                 {
                     Console.WriteLine("Lower");
-                    continue;
                 }
 
                 else
                 {
-                    Console.WriteLine("You guessed it!");
+                    Console.WriteLine("You guessed right!");
                     break;
                 }
             }
-        } while (digit_guess != magic_number);
+            Console.Write("Would you like to play again? (yes/no)"); string user_response = Console.ReadLine().ToLower();
+            if (user_response == "no")
+            {
+                Console.WriteLine("Exiting...");
+                return;
+            }
+            else if (user_response == "yes")
+            {
+                continue;
+            }
+
+            else
+            {
+                Console.WriteLine("Invalid Input!");
+            }
+        }
     }
 }
