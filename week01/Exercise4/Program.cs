@@ -23,15 +23,15 @@ class Program
                 {
                     //sum of numbers in list
                     sum += element;
-                    Console.WriteLine($"Sum of numbers in the list = {numbers}");
+                    Console.WriteLine($"The sum is: {numbers}");
 
                     //Average of numbers in the list
                     float avg_numbers = sum / length;
-                    Console.WriteLine($"Average of numbers provided = {avg_numbers}");
+                    Console.WriteLine($"The average is: {avg_numbers}");
 
                     //The largest of the numbers in the list
                     int largest = numbers.Max();
-                    Console.WriteLine($"The largest number = {largest}");
+                    Console.WriteLine($"The largest number is: {largest}");
 
                 }
                 return;
