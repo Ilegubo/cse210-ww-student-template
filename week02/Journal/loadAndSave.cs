@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-public class loadAndSave
+public class LoadAndSave
 {
     public string _fileName, _content;
     public List<string> _notes = new List<string>();

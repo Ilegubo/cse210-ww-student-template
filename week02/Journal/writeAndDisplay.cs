@@ -2,7 +2,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace journal_project;
 
-public class writeAndDisplay
+public class WriteAndDisplay
 {
     public string _content, _note;
     // string _note is the note the user wants to enter

@@ -28,7 +28,7 @@ public class Program
             return option;
         }
 
-        writeAndDisplay wad = new writeAndDisplay();
+        WriteAndDisplay wad = new WriteAndDisplay();
         loadAndSave las = new loadAndSave();
         while (true)
         {
@@ -102,7 +102,7 @@ public class Program
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine($"An error occured while loading file.");
+                        Console.WriteLine($"An error occurred while loading file.");
                     }
             }
             
