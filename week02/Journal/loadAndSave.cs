@@ -10,7 +10,7 @@ public class LoadAndSave
     
     
 
-    public bool loadJournal(string _fileName)
+    public bool LoadJournal(string _fileName)
     {
         try
         {

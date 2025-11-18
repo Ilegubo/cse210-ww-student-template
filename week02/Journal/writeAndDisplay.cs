@@ -11,7 +11,7 @@ public class WriteAndDisplay
     public List<string> _prompts = new List<string>();
     public int length;
 
-    public void writeJournal(string _prompt)
+    public void WriteJournal(string _prompt)
     {
         
         string date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
@@ -21,7 +21,7 @@ public class WriteAndDisplay
         _notes.Add(_content);
     }
 
-    public void displayJournal(List<string> _notes)
+    public void DisplayJournal(List<string> _notes)
     {
         foreach (string _journalEntry in _notes)
         {
@@ -29,7 +29,7 @@ public class WriteAndDisplay
         }
     }
     
-    public void addPrompts()
+    public void AddPrompts()
     {
         _prompts.Add("Who was the most interesting person I interacted with today?");
         _prompts.Add("What was the best part of my day?");
@@ -42,11 +42,11 @@ public class WriteAndDisplay
 
     public string selectPrompt()
     {
-        addPrompts();
+        AddPrompts();
         Random rnd = new Random();
 
-        int rndPrompt = rnd.Next(0, _prompts.Count);
-        return _prompts[rndPrompt];
+        public int _rndPrompt = rnd.Next(0, _prompts.Count);
+        return _prompts[_rndPrompt];
     }
 }
 

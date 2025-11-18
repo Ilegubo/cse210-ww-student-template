@@ -35,10 +35,10 @@ public class Program
             string option = Menu();
             if (option == "1") //write
             {
-                string _prompt = wad.selectPrompt();
+                string _prompt = wad.SelectPrompt();
                 Console.WriteLine(_prompt);
                 wad._note = Console.ReadLine();
-                wad.writeJournal(_prompt);
+                wad.WriteJournal(_prompt);
             }
 
             else if (option == "2") //display
@@ -52,13 +52,13 @@ public class Program
 
                     else
                     {
-                        wad.displayJournal(las._notes);
+                        wad.DisplayJournal(las._notes);
                     }
                 }
 
                 else
                 {
-                    wad.displayJournal(wad._notes);
+                    wad.DisplayJournal(wad._notes);
                 }
             }
             
@@ -79,7 +79,7 @@ public class Program
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine($"An error occured while loading {e}");
+                    Console.WriteLine($"An error occurred while loading {e}");
                 }
             }
             
