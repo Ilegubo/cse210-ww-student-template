@@ -24,14 +24,14 @@ public class LoadAndSave
         }
         catch (Exception e)
         {
-            Console.WriteLine($"An error occured while loading file {e}");
+            Console.WriteLine($"An error occurred while loading file {e}");
             return false ;
         }
         
          
     }
 
-    public bool saveJournal(string _fileName)
+    public bool SaveJournal(string _fileName)
     {
         try
         {
@@ -44,7 +44,7 @@ public class LoadAndSave
         }
         catch (Exception e)
         {
-            Console.WriteLine($"An error occured while saving file {e}");
+            Console.WriteLine($"An error occurred while saving file {e}");
             return false;
 
         }

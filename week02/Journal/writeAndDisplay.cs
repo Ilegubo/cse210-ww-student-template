@@ -6,7 +6,7 @@ public class WriteAndDisplay
 {
     public string _content, _note;
     // string _note is the note the user wants to enter
-    //List<string> _notes are the compliation of 
+    //List<string> _notes are the compilation of 
     public List<string> _notes = new List<string>();
     public List<string> _prompts = new List<string>();
     public int length;
@@ -40,7 +40,7 @@ public class WriteAndDisplay
 
     }
 
-    public string selectPrompt()
+    public string SelectPrompt()
     {
         AddPrompts();
         Random rnd = new Random();
