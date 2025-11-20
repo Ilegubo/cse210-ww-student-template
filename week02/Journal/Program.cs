@@ -29,7 +29,7 @@ public class Program
         }
 
         WriteAndDisplay wad = new WriteAndDisplay();
-        loadAndSave las = new loadAndSave();
+        LoadAndSave las = new LoadAndSave();
         while (true)
         {
             string option = Menu();

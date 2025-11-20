@@ -42,11 +42,17 @@ public class WriteAndDisplay
 
     public string SelectPrompt()
     {
-        AddPrompts();
+    if (_prompts.Count == 0)
+        {
+            AddPrompts();
+        }
         Random rnd = new Random();
-
-        public int _rndPrompt = rnd.Next(0, _prompts.Count);
+    if (_prompts.Count > 0)
+        {
+        int _rndPrompt = rnd.Next(0, _prompts.Count);
         return _prompts[_rndPrompt];
+        }
+    return "No prompt Selected";
     }
 }
 
